@@ -19,7 +19,7 @@ function Portrait() {
   }
   return (
     <img
-      src="/farida.jpg"
+      src={`${import.meta.env.BASE_URL}farida.jpg`}
       alt={site.creator}
       onError={() => setFailed(true)}
       className="aspect-[4/5] w-full rounded-3xl object-cover shadow-xl shadow-ink/10"
