@@ -19,11 +19,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      # Turns GitHub Pages on automatically (source = GitHub Actions) so no
-      # manual settings toggle is needed.
+      # Force Pages into "GitHub Actions" (workflow) mode. If the repo is stuck
+      # in "Deploy from a branch" (Jekyll) mode, that conflicts with this deploy
+      # and both fail — so we set build_type=workflow explicitly via the API.
+      - name: Force Pages source = GitHub Actions
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          api="https://api.github.com/repos/${{ github.repository }}/pages"
+          hdr=(-H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json")
+          # Create the Pages site in workflow mode if it doesn't exist yet…
+          curl -sf -X POST "${hdr[@]}" "$api" -d '{"build_type":"workflow"}' || true
+          # …and switch it to workflow mode if it already exists in branch mode.
+          curl -sf -X PUT  "${hdr[@]}" "$api" -d '{"build_type":"workflow"}' || true
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - uses: actions/setup-node@v4
         with:
           node-version: 22
