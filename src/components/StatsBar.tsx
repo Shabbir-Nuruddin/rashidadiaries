@@ -6,10 +6,10 @@ type Stat = { target: number; fmt: (n: number) => string; label: string; sub: st
 
 const stats: Stat[] = [
   { target: data.stats.followers, fmt: (n) => compact(n), label: "Followers", sub: "engaged community" },
-  { target: data.stats.totalPlays, fmt: (n) => compact(n) + "+", label: "Total reach", sub: "plays across reels" },
-  { target: data.stats.avgEngagementPct, fmt: (n) => n.toFixed(1) + "%", label: "Engagement", sub: "above the 1–3% norm" },
+  { target: data.stats.totalViews, fmt: (n) => compact(n) + "+", label: "Total views", sub: "across every reel" },
+  { target: data.stats.topViews, fmt: (n) => compact(n), label: "Best reel", sub: "single-reel views" },
+  { target: data.stats.totalLikes, fmt: (n) => compact(n) + "+", label: "Likes", sub: "hearts earned" },
   { target: data.stats.brandCount, fmt: (n) => Math.round(n) + "+", label: "Brands", sub: "already delivered for" },
-  { target: data.stats.reelCount, fmt: (n) => Math.round(n) + "+", label: "Campaigns", sub: "reels produced" },
 ];
 
 function StatItem({ s }: { s: Stat }) {
@@ -30,7 +30,7 @@ export default function StatsBar() {
     <section className="bg-ink py-16 md:py-20">
       <div className="container-x">
         <p className="mb-10 text-center text-sm text-cream/60">
-          The numbers a brand actually cares about — pulled straight from the account.
+          The numbers a brand actually cares about, pulled straight from the account.
         </p>
         <div className="grid grid-cols-2 gap-y-10 gap-x-4 sm:grid-cols-3 lg:grid-cols-5">
           {stats.map((s) => (

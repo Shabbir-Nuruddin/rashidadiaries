@@ -4,7 +4,6 @@ export type Brand = {
   name: string;
   category: string;
   reels: number;
-  plays: number;
   views: number;
   likes: number;
 };
@@ -14,10 +13,10 @@ export type Reel = {
   url: string;
   thumb: string | null;
   views: number;
-  plays: number;
   likes: number;
   comments: number;
   brand: string | null;
+  hook: string;
   caption: string;
 };
 
@@ -32,8 +31,10 @@ export type SiteData = {
   };
   stats: {
     followers: number;
-    totalPlays: number;
     totalViews: number;
+    topViews: number;
+    totalLikes: number;
+    millionReels: number;
     avgEngagementPct: number;
     brandCount: number;
     reelCount: number;

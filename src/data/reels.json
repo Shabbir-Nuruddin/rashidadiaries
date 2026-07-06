@@ -1,274 +1,428 @@
 {
   "meta": {
-    "generatedAt": "2026-07-06T08:58:51.425Z",
+    "generatedAt": "2026-07-06T14:41:58.646Z",
     "handle": "therashidadiaries",
     "creator": "Farida Nuruddin",
-    "reelCount": 49,
+    "reelCount": 238,
     "firstPost": "2025-02-10",
     "lastPost": "2026-07-04"
   },
   "stats": {
     "followers": 80000,
-    "totalPlays": 9660502,
-    "totalViews": 1479691,
-    "avgEngagementPct": 4.2,
-    "brandCount": 14,
-    "reelCount": 49
+    "totalViews": 21632403,
+    "topViews": 6338399,
+    "totalLikes": 723772,
+    "millionReels": 2,
+    "avgEngagementPct": 1.3,
+    "brandCount": 19,
+    "reelCount": 238
   },
   "brands": [
     {
+      "name": "Cream One",
+      "category": "Food",
+      "reels": 1,
+      "views": 1065101,
+      "likes": 25922
+    },
+    {
+      "name": "GetYourGuide",
+      "category": "Travel",
+      "reels": 8,
+      "views": 773393,
+      "likes": 8365
+    },
+    {
+      "name": "Danube Properties",
+      "category": "Real Estate",
+      "reels": 4,
+      "views": 366624,
+      "likes": 9749
+    },
+    {
+      "name": "DealPrice",
+      "category": "Retail",
+      "reels": 3,
+      "views": 298467,
+      "likes": 3172
+    },
+    {
+      "name": "Blue Botel Cafe",
+      "category": "Food",
+      "reels": 3,
+      "views": 273949,
+      "likes": 2528
+    },
+    {
       "name": "HONOR",
       "category": "Tech",
+      "reels": 4,
+      "views": 248754,
+      "likes": 2544
+    },
+    {
+      "name": "Papa John's",
+      "category": "Food",
+      "reels": 4,
+      "views": 170633,
+      "likes": 1441
+    },
+    {
+      "name": "Naseem Perfume",
+      "category": "Beauty",
       "reels": 3,
-      "plays": 206426,
-      "views": 42975,
-      "likes": 1998
+      "views": 141324,
+      "likes": 1204
     },
     {
       "name": "Downy",
       "category": "Home",
       "reels": 1,
-      "plays": 112365,
-      "views": 1160,
+      "views": 112367,
       "likes": 2574
     },
     {
       "name": "Calicut Top Form",
       "category": "Food",
       "reels": 1,
-      "plays": 112255,
-      "views": 12849,
+      "views": 112256,
       "likes": 1990
     },
     {
       "name": "Al Marmoom Domes",
       "category": "Hospitality",
       "reels": 1,
-      "plays": 110829,
-      "views": 15373,
-      "likes": 1847
+      "views": 110839,
+      "likes": 1846
     },
     {
       "name": "Ariel",
       "category": "Home",
       "reels": 1,
-      "plays": 105290,
-      "views": 8293,
+      "views": 105290,
       "likes": 2740
     },
     {
       "name": "The Spicery",
       "category": "Food",
       "reels": 1,
-      "plays": 95762,
-      "views": 10802,
-      "likes": 1012
-    },
-    {
-      "name": "GetYourGuide",
-      "category": "Travel",
-      "reels": 1,
-      "plays": 91598,
-      "views": 14826,
-      "likes": 1012
+      "views": 95766,
+      "likes": 1011
     },
     {
       "name": "Bombay Grill",
       "category": "Food",
       "reels": 1,
-      "plays": 79098,
-      "views": 3665,
-      "likes": 1173
+      "views": 79099,
+      "likes": 1172
     },
     {
       "name": "Beelaban",
       "category": "Food",
       "reels": 1,
-      "plays": 57837,
-      "views": 16093,
+      "views": 57927,
       "likes": 1168
     },
     {
       "name": "Melty Cookie Cafe",
       "category": "Food",
       "reels": 1,
-      "plays": 49543,
-      "views": 5414,
+      "views": 49546,
       "likes": 513
-    },
-    {
-      "name": "Papa John's",
-      "category": "Food",
-      "reels": 1,
-      "plays": 44812,
-      "views": 10015,
-      "likes": 65
     },
     {
       "name": "Ecolyte",
       "category": "Wellness",
       "reels": 1,
-      "plays": 36226,
-      "views": 228,
+      "views": 36226,
       "likes": 13
     },
     {
       "name": "Callie Gifts",
       "category": "Gifting",
       "reels": 1,
-      "plays": 29285,
-      "views": 5897,
+      "views": 29295,
       "likes": 521
     },
     {
       "name": "Pampers",
       "category": "Baby",
       "reels": 1,
-      "plays": 7021,
-      "views": 1439,
+      "views": 7044,
       "likes": 24
     }
   ],
   "caseStudy": {
-    "name": "HONOR",
-    "category": "Tech",
-    "reels": 3,
-    "plays": 206426,
-    "views": 42975,
-    "likes": 1998
+    "name": "Cream One",
+    "category": "Food",
+    "reels": 1,
+    "views": 1065101,
+    "likes": 25922
   },
   "featured": [
     {
       "shortCode": "DF6DWfru248",
       "url": "https://www.instagram.com/p/DF6DWfru248/",
       "thumb": "reels/DF6DWfru248.jpg",
-      "views": 626952,
-      "plays": 6338392,
-      "likes": 471021,
+      "views": 6338399,
+      "likes": 471005,
       "comments": 432,
       "brand": null,
+      "hook": "Breakout viral moment",
       "caption": "Tag your loved ones Love, Zahra 🎢"
+    },
+    {
+      "shortCode": "DUXm21fD_KL",
+      "url": "https://www.instagram.com/p/DUXm21fD_KL/",
+      "thumb": "reels/DUXm21fD_KL.jpg",
+      "views": 1065101,
+      "likes": 25922,
+      "comments": 219,
+      "brand": "Cream One",
+      "hook": "Over a million views",
+      "caption": "Saving is important… every penny counts 💰 So she came to the mall with her savings box, promise"
+    },
+    {
+      "shortCode": "DNOITm1Pcm1",
+      "url": "https://www.instagram.com/p/DNOITm1Pcm1/",
+      "thumb": "reels/DNOITm1Pcm1.jpg",
+      "views": 758594,
+      "likes": 13605,
+      "comments": 239,
+      "brand": null,
+      "hook": "Strong organic reach",
+      "caption": "If anyone was wondering what we did last weekend, we were at a friends house, playing games all"
+    },
+    {
+      "shortCode": "DWjt-DqjCxv",
+      "url": "https://www.instagram.com/p/DWjt-DqjCxv/",
+      "thumb": "reels/DWjt-DqjCxv.jpg",
+      "views": 562247,
+      "likes": 7821,
+      "comments": 338,
+      "brand": null,
+      "hook": "Strong organic reach",
+      "caption": "Logic or Panic mention in comment"
+    },
+    {
+      "shortCode": "DMs1sgCyBGj",
+      "url": "https://www.instagram.com/p/DMs1sgCyBGj/",
+      "thumb": "reels/DMs1sgCyBGj.jpg",
+      "views": 186797,
+      "likes": 2775,
+      "comments": 92,
+      "brand": "GetYourGuide",
+      "hook": "GetYourGuide partnership",
+      "caption": "Dinner in the Sky, Dubai 🥂🌇 Suspended 50 meters above the city, surrounded by golden skies, go"
     },
     {
       "shortCode": "DZXLv13umPw",
       "url": "https://www.instagram.com/p/DZXLv13umPw/",
       "thumb": "reels/DZXLv13umPw.jpg",
-      "views": 91355,
-      "plays": 178211,
-      "likes": 2510,
+      "views": 178523,
+      "likes": 2511,
       "comments": 74,
       "brand": null,
+      "hook": "Strong organic reach",
       "caption": "Alhamdulillah"
+    },
+    {
+      "shortCode": "DUajs0aDwG4",
+      "url": "https://www.instagram.com/p/DUajs0aDwG4/",
+      "thumb": "reels/DUajs0aDwG4.jpg",
+      "views": 158263,
+      "likes": 2226,
+      "comments": 260,
+      "brand": "Danube Properties",
+      "hook": "Danube Properties partnership",
+      "caption": ""
     },
     {
       "shortCode": "DZSSo6IuKdE",
       "url": "https://www.instagram.com/p/DZSSo6IuKdE/",
       "thumb": "reels/DZSSo6IuKdE.jpg",
-      "views": 56568,
-      "plays": 154182,
+      "views": 154432,
       "likes": 3,
       "comments": 83,
       "brand": null,
-      "caption": "“She goes to university? She must be too clever.” 🙄 “She’s too tall.” 📏 “Can she make ro"
+      "hook": "Wedding-season favourite",
+      "caption": "“She goes to university? She must be too clever.” 🙄 “She’s too tall.” 📏 “Can she make round ro"
     },
     {
       "shortCode": "DZb2TB1Pgkh",
       "url": "https://www.instagram.com/p/DZb2TB1Pgkh/",
       "thumb": "reels/DZb2TB1Pgkh.jpg",
-      "views": 85759,
-      "plays": 151235,
-      "likes": 1519,
+      "views": 151938,
+      "likes": 1523,
       "comments": 21,
       "brand": null,
-      "caption": "The Bride Sparkled the Most… Until Her Bhanji Arrived 🥹 Wedding, wedding bells, bhanjimom"
+      "hook": "Wedding-season favourite",
+      "caption": "The Bride Sparkled the Most… Until Her Bhanji Arrived 🥹 Wedding, wedding bells, bhanjimoment, b"
     },
     {
       "shortCode": "DYCbN4-sfSX",
       "url": "https://www.instagram.com/p/DYCbN4-sfSX/",
       "thumb": "reels/DYCbN4-sfSX.jpg",
-      "views": 22307,
-      "plays": 131798,
+      "views": 131798,
       "likes": 1743,
       "comments": 38,
+      "brand": "DealPrice",
+      "hook": "DealPrice partnership",
+      "caption": "Branded shoes starting from AED 20?! 😳🔥 Found the CRAZIEST deals at  Ajman 👟✨ From Abros to U"
+    },
+    {
+      "shortCode": "DUI0lLCj3Vj",
+      "url": "https://www.instagram.com/p/DUI0lLCj3Vj/",
+      "thumb": "reels/DUI0lLCj3Vj.jpg",
+      "views": 121220,
+      "likes": 1393,
+      "comments": 48,
+      "brand": "Blue Botel Cafe",
+      "hook": "Blue Botel Cafe partnership",
+      "caption": "People always ask me what’s the one place I’ve reviewed that I keep going back to, and the answe"
+    },
+    {
+      "shortCode": "DQzIeapDwMB",
+      "url": "https://www.instagram.com/p/DQzIeapDwMB/",
+      "thumb": "reels/DQzIeapDwMB.jpg",
+      "views": 120730,
+      "likes": 1128,
+      "comments": 8,
       "brand": null,
-      "caption": "Branded shoes starting from AED 20?! 😳🔥 Found the CRAZIEST deals at @dealpriceae Ajman \ud83d"
+      "hook": "Strong organic reach",
+      "caption": "Discovered a page full of style and sparkle!  💫 Beautiful purses, trendy accessories, kids’ set"
+    },
+    {
+      "shortCode": "DKXMk0SvXu4",
+      "url": "https://www.instagram.com/p/DKXMk0SvXu4/",
+      "thumb": "reels/DKXMk0SvXu4.jpg",
+      "views": 118703,
+      "likes": 4251,
+      "comments": 98,
+      "brand": null,
+      "hook": "Food spot people saved & shared",
+      "caption": "Unlimited tea & filter coffee? Yes, please! Enjoy The breakfast pod platter offer for only AED 4"
     },
     {
       "shortCode": "DZexr7-OnZe",
       "url": "https://www.instagram.com/p/DZexr7-OnZe/",
       "thumb": "reels/DZexr7-OnZe.jpg",
-      "views": 58222,
-      "plays": 114992,
+      "views": 115222,
       "likes": 1219,
       "comments": 25,
       "brand": null,
-      "caption": "POV: Your husband copies every single thing you do… without a second thought. 😂🤍 No hesi"
-    },
-    {
-      "shortCode": "DYfZQFLO5e5",
-      "url": "https://www.instagram.com/p/DYfZQFLO5e5/",
-      "thumb": "reels/DYfZQFLO5e5.jpg",
-      "views": 1160,
-      "plays": 112365,
-      "likes": 2574,
-      "comments": 98,
-      "brand": "Downy",
-      "caption": "One question I get asked all the time is… “How do your clothes always smell so fresh?” 👀✨"
-    },
-    {
-      "shortCode": "DYtWZcuM8CW",
-      "url": "https://www.instagram.com/p/DYtWZcuM8CW/",
-      "thumb": "reels/DYtWZcuM8CW.jpg",
-      "views": 12849,
-      "plays": 112255,
-      "likes": 1990,
-      "comments": 45,
-      "brand": "Calicut Top Form",
-      "caption": "Some places become more than just restaurants… they become part of your family memories ❤️"
+      "hook": "Relatable POV that struck a nerve",
+      "caption": "POV: Your husband copies every single thing you do… without a second thought. 😂🤍 No hesitation"
     },
     {
       "shortCode": "DZgz6MMMOJC",
       "url": "https://www.instagram.com/p/DZgz6MMMOJC/",
       "thumb": "reels/DZgz6MMMOJC.jpg",
-      "views": 50640,
-      "plays": 112201,
-      "likes": 1431,
+      "views": 112384,
+      "likes": 1437,
       "comments": 46,
       "brand": null,
-      "caption": "Every friend group has that one person… and apparently, it was her. 😂💍 Her: “Why am I al"
+      "hook": "Relatable POV that struck a nerve",
+      "caption": "Every friend group has that one person… and apparently, it was her. 😂💍 Her: “Why am I always i"
+    },
+    {
+      "shortCode": "DYfZQFLO5e5",
+      "url": "https://www.instagram.com/p/DYfZQFLO5e5/",
+      "thumb": "reels/DYfZQFLO5e5.jpg",
+      "views": 112367,
+      "likes": 2574,
+      "comments": 98,
+      "brand": "Downy",
+      "hook": "Downy partnership",
+      "caption": "One question I get asked all the time is… “How do your clothes always smell so fresh?” 👀✨ So he"
+    },
+    {
+      "shortCode": "DYtWZcuM8CW",
+      "url": "https://www.instagram.com/p/DYtWZcuM8CW/",
+      "thumb": "reels/DYtWZcuM8CW.jpg",
+      "views": 112256,
+      "likes": 1990,
+      "comments": 45,
+      "brand": "Calicut Top Form",
+      "hook": "Calicut Top Form partnership",
+      "caption": "Some places become more than just restaurants… they become part of your family memories ❤️ So ha"
     },
     {
       "shortCode": "DPI8cyQjwk4",
       "url": "https://www.instagram.com/p/DPI8cyQjwk4/",
       "thumb": "reels/DPI8cyQjwk4.jpg",
-      "views": 15373,
-      "plays": 110829,
-      "likes": 1847,
+      "views": 110839,
+      "likes": 1846,
       "comments": 73,
       "brand": "Al Marmoom Domes",
-      "caption": "Checked into serenity at @almarmoom.domes 🏜️💫 Surrounded by desert skies, peaceful vibes"
+      "hook": "Al Marmoom Domes partnership",
+      "caption": "Checked into serenity at  🏜️💫 Surrounded by desert skies, peaceful vibes & nature’s beauty 🌿\ud83c"
     },
     {
       "shortCode": "DX88jCJMt76",
       "url": "https://www.instagram.com/p/DX88jCJMt76/",
       "thumb": "reels/DX88jCJMt76.jpg",
-      "views": 22462,
-      "plays": 110293,
+      "views": 110294,
       "likes": 523,
       "comments": 30,
       "brand": null,
-      "caption": "Positive mind = positive life. It’s really that simple. positive, mindset, stay, happy sta"
+      "hook": "Strong organic reach",
+      "caption": "Positive mind = positive life. It’s really that simple. positive, mindset, stay, happy stay posi"
+    },
+    {
+      "shortCode": "DNLwmhxSrTi",
+      "url": "https://www.instagram.com/p/DNLwmhxSrTi/",
+      "thumb": "reels/DNLwmhxSrTi.jpg",
+      "views": 110179,
+      "likes": 1636,
+      "comments": 72,
+      "brand": null,
+      "hook": "Food spot people saved & shared",
+      "caption": "Yesterday’s K-Food Exhibition at  Dubai Festival City Mall was truly a Seoul-ful experience! 🇰\ud83c"
+    },
+    {
+      "shortCode": "DXBuZ0UDCaS",
+      "url": "https://www.instagram.com/p/DXBuZ0UDCaS/",
+      "thumb": "reels/DXBuZ0UDCaS.jpg",
+      "views": 109341,
+      "likes": 1160,
+      "comments": 39,
+      "brand": "GetYourGuide",
+      "hook": "GetYourGuide partnership",
+      "caption": "A quiet night by the sea, soft lights, and the kind of love that doesn’t need to be loud to be u"
+    },
+    {
+      "shortCode": "DKxJU9cvU25",
+      "url": "https://www.instagram.com/p/DKxJU9cvU25/",
+      "thumb": "reels/DKxJU9cvU25.jpg",
+      "views": 106712,
+      "likes": 1059,
+      "comments": 68,
+      "brand": "Blue Botel Cafe",
+      "hook": "Blue Botel Cafe partnership",
+      "caption": "Dear diary, We visited  in Al Zahia and it turned out to be one of the best burgers I’ve had. Th"
     },
     {
       "shortCode": "DYo2tQmseku",
       "url": "https://www.instagram.com/p/DYo2tQmseku/",
       "thumb": "reels/DYo2tQmseku.jpg",
-      "views": 8293,
-      "plays": 105290,
+      "views": 105290,
       "likes": 2740,
       "comments": 33,
       "brand": "Ariel",
-      "caption": "Dubai humidity really had me questioning my washing machine for a second 😭 Turns out clot"
+      "hook": "Ariel partnership",
+      "caption": "Dubai humidity really had me questioning my washing machine for a second 😭 Turns out clothes ca"
+    },
+    {
+      "shortCode": "DUTpO5kEkDX",
+      "url": "https://www.instagram.com/p/DUTpO5kEkDX/",
+      "thumb": "reels/DUTpO5kEkDX.jpg",
+      "views": 104082,
+      "likes": 1066,
+      "comments": 37,
+      "brand": null,
+      "hook": "Food spot people saved & shared",
+      "caption": "These cakes didn’t last long in my house 🤍 The strawberry dotted cake was loaded with fresh str"
     }
   ]
 }

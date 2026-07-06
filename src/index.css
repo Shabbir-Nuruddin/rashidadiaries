@@ -45,6 +45,20 @@
   transform: translateY(0);
 }
 
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* layered extrusion so the intro wordmark reads as 3D */
+.intro-word {
+  text-shadow: 1px 1px 0 rgba(176, 141, 87, 0.25), 2px 2px 0 rgba(176, 141, 87, 0.18),
+    3px 3px 0 rgba(192, 110, 82, 0.14), 5px 6px 10px rgba(33, 28, 24, 0.2);
+}
+
 /* subtle paper grain */
 .grain::before {
   content: "";

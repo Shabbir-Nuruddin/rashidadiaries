@@ -83,8 +83,8 @@ function ContactForm() {
               Select…
             </option>
             <option>Under AED 2,000</option>
-            <option>AED 2,000 – 5,000</option>
-            <option>AED 5,000 – 10,000</option>
+            <option>AED 2,000 to 5,000</option>
+            <option>AED 5,000 to 10,000</option>
             <option>AED 10,000+</option>
             <option>Let's discuss</option>
           </select>
@@ -118,7 +118,7 @@ function ContactForm() {
       )}
       {status === "nokey" && (
         <p className="mt-3 text-center text-sm text-mocha">
-          The form isn't connected to email yet — please use WhatsApp or email above for now.
+          The form isn't connected to email yet, so please use WhatsApp or email above for now.
         </p>
       )}
     </form>

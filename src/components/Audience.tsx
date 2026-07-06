@@ -11,7 +11,7 @@ function Portrait() {
         <div className="text-center">
           <span className="font-serif text-6xl font-semibold text-clay/70">FN</span>
           <p className="mt-3 text-xs uppercase tracking-label text-mocha/70">
-            Add your photo — public/farida.jpg
+            Add your photo (public/farida.jpg)
           </p>
         </div>
       </div>
@@ -44,7 +44,7 @@ export default function Audience() {
             Hi, I'm {site.creator}
           </h2>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-mocha">
-            For years I've been sharing real family life in {site.location.split(",")[0]} — the
+            For years I've been sharing real family life in {site.location.split(",")[0]}, the
             warmth, the humour, the everyday moments that people see themselves in. That trust is
             exactly what turns a brand mention into something my community remembers and buys.
           </p>

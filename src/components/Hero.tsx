@@ -6,21 +6,18 @@ import { Arrow, Instagram } from "./icons";
 const quick = [
   { value: compact(data.stats.followers), label: "Followers" },
   { value: compact(data.stats.totalViews) + "+", label: "Views" },
-  { value: data.stats.avgEngagementPct + "%", label: "Engagement" },
+  { value: compact(data.stats.topViews), label: "Top reel" },
 ];
 
-// three real reel covers for the hero collage
 const covers = data.featured.filter((r) => r.thumb).slice(0, 3);
 
 export default function Hero() {
   return (
     <section id="top" className="grain relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-24">
-      {/* soft ambient wash */}
       <div className="pointer-events-none absolute -top-32 -right-24 h-96 w-96 rounded-full bg-blush/50 blur-3xl" />
       <div className="pointer-events-none absolute top-40 -left-24 h-80 w-80 rounded-full bg-sand/60 blur-3xl" />
 
       <div className="container-x relative grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
-        {/* copy */}
         <div className="animate-fade-up">
           <p className="label mb-5 flex items-center gap-2">
             <span className="h-px w-8 bg-clay" /> {site.tagline}
@@ -31,8 +28,8 @@ export default function Hero() {
             Diaries
           </h1>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-mocha">
-            I'm <span className="font-semibold text-ink">{site.creator}</span> — I turn everyday
-            family &amp; lifestyle moments into content that {site.location.split(",")[0]} audiences
+            I'm <span className="font-semibold text-ink">{site.creator}</span>. I turn everyday
+            family and lifestyle moments into content that {site.location.split(",")[0]} audiences
             watch, trust and act on. Here's the reach behind the reels.
           </p>
 
@@ -45,7 +42,6 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* quick stats */}
           <dl className="mt-12 flex max-w-md items-end gap-8">
             {quick.map((q) => (
               <div key={q.label}>
@@ -58,7 +54,6 @@ export default function Hero() {
           </dl>
         </div>
 
-        {/* reel collage */}
         <div className="relative mx-auto hidden h-[440px] w-full max-w-md sm:block">
           {covers.map((r, i) => {
             const styles = [
@@ -76,16 +71,9 @@ export default function Hero() {
                 style={{ animation: `fade-up 0.7s ${0.15 * i + 0.2}s both` }}
               >
                 <div className="relative aspect-[9/16]">
-                  <img
-                    src={r.thumb!}
-                    alt="Reel cover"
-                    loading="eager"
-                    className="h-full w-full object-cover"
-                  />
+                  <img src={r.thumb!} alt="Reel cover" loading="eager" className="h-full w-full object-cover" />
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/70 to-transparent p-3">
-                    <p className="text-[11px] font-semibold text-cream/90">
-                      {compact(r.plays)} plays
-                    </p>
+                    <p className="text-[11px] font-semibold text-cream/90">{compact(r.views)} views</p>
                   </div>
                 </div>
               </a>
