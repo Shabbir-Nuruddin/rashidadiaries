@@ -18,7 +18,7 @@ const DATASET =
 
 const OWNER = "therashidadiaries";
 const FOLLOWERS = 80000; // not in scrape; provided by creator
-const FEATURED_COUNT = 24;
+const FEATURED_COUNT = 50;
 
 // Curated map of commercial brand handles -> display info. Personal / family /
 // creator accounts are deliberately excluded so the "brands" story stays honest.

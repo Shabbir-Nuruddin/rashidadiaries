@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { data } from "../lib/data";
 import { compact } from "../lib/format";
@@ -57,6 +57,25 @@ export default function FeaturedWork() {
   const nudge = (dir: number) =>
     rail.current?.scrollBy({ left: dir * 340, behavior: "smooth" });
 
+  // Turn a vertical mouse-wheel into horizontal scrolling while the pointer is
+  // over the rail, but only while there is room to scroll that way. Once the
+  // rail hits an end, the wheel falls through and the page scrolls normally.
+  useEffect(() => {
+    const el = rail.current;
+    if (!el) return;
+    const onWheel = (e: WheelEvent) => {
+      if (Math.abs(e.deltaY) < Math.abs(e.deltaX)) return; // real horizontal gesture
+      const canRight = el.scrollLeft < el.scrollWidth - el.clientWidth - 1;
+      const canLeft = el.scrollLeft > 0;
+      if ((e.deltaY > 0 && canRight) || (e.deltaY < 0 && canLeft)) {
+        e.preventDefault();
+        el.scrollLeft += e.deltaY;
+      }
+    };
+    el.addEventListener("wheel", onWheel, { passive: false });
+    return () => el.removeEventListener("wheel", onWheel);
+  }, []);
+
   return (
     <section id="work" className="overflow-hidden py-20 md:py-28">
       <div className="container-x">
@@ -73,8 +92,8 @@ export default function FeaturedWork() {
               {data.stats.reelCount} reels. {compact(data.stats.totalViews)} views. Two past a million.
             </h2>
             <p className="mt-4 text-mocha">
-              Swipe through recent work, branded and organic. Every card opens the real post
-              on Instagram.
+              Hover and scroll to move through {data.featured.length} recent reels, branded and
+              organic. Every card opens the real post on Instagram.
             </p>
           </motion.div>
 
@@ -97,7 +116,7 @@ export default function FeaturedWork() {
         </div>
       </div>
 
-      {/* horizontal rail */}
+      {/* horizontal rail: wheel-scrolls on hover, swipes on touch */}
       <div
         ref={rail}
         className="no-scrollbar mt-12 flex snap-x snap-mandatory gap-6 overflow-x-auto scroll-pl-6 px-6 pb-2 md:px-10"
@@ -108,14 +127,14 @@ export default function FeaturedWork() {
         <div className="shrink-0 pr-2" />
       </div>
 
-      <div className="container-x mt-10">
+      <div className="container-x mt-14 flex justify-center">
         <a
-          href={data.meta.handle ? `https://instagram.com/${data.meta.handle}` : "#"}
+          href={`https://instagram.com/${data.meta.handle}`}
           target="_blank"
           rel="noreferrer"
-          className="btn-ghost"
+          className="btn-primary !px-8 !py-4 text-base"
         >
-          View full profile <Arrow />
+          View all on Instagram <Arrow />
         </a>
       </div>
     </section>
