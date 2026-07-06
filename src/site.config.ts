@@ -18,7 +18,7 @@ export const site = {
 
   // Contact form email service (Web3Forms, free, no backend).
   // Paste the Access Key you get by email from web3forms.com below.
-  web3formsKey: "", //  <- EDIT: paste your Web3Forms access key
+  web3formsKey: "b89cec20-0539-4904-b32d-1ed2f3ba167d",
 
   // ── WHAT YOU OFFER (shown in the "Services" section) ──────────────────
   services: [
