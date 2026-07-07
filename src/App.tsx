@@ -9,7 +9,6 @@ import TrustedBy from "./components/TrustedBy";
 import FeaturedWork from "./components/FeaturedWork";
 import Audience from "./components/Audience";
 import Services from "./components/Services";
-import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import FloatingContact from "./components/FloatingContact";
@@ -32,7 +31,6 @@ export default function App() {
         <FeaturedWork />
         <Audience />
         <Services />
-        <Testimonials />
         <Contact />
       </main>
       <Footer />
