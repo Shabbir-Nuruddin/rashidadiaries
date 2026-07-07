@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { motion } from "framer-motion";
 import { data } from "../lib/data";
 import { compact } from "../lib/format";
@@ -57,25 +57,6 @@ export default function FeaturedWork() {
   const nudge = (dir: number) =>
     rail.current?.scrollBy({ left: dir * 340, behavior: "smooth" });
 
-  // Turn a vertical mouse-wheel into horizontal scrolling while the pointer is
-  // over the rail, but only while there is room to scroll that way. Once the
-  // rail hits an end, the wheel falls through and the page scrolls normally.
-  useEffect(() => {
-    const el = rail.current;
-    if (!el) return;
-    const onWheel = (e: WheelEvent) => {
-      if (Math.abs(e.deltaY) < Math.abs(e.deltaX)) return; // real horizontal gesture
-      const canRight = el.scrollLeft < el.scrollWidth - el.clientWidth - 1;
-      const canLeft = el.scrollLeft > 0;
-      if ((e.deltaY > 0 && canRight) || (e.deltaY < 0 && canLeft)) {
-        e.preventDefault();
-        el.scrollLeft += e.deltaY;
-      }
-    };
-    el.addEventListener("wheel", onWheel, { passive: false });
-    return () => el.removeEventListener("wheel", onWheel);
-  }, []);
-
   return (
     <section id="work" className="overflow-hidden py-20 md:py-28">
       <div className="container-x">
@@ -92,8 +73,8 @@ export default function FeaturedWork() {
               {data.stats.reelCount} reels. {compact(data.stats.totalViews)} views. Two past a million.
             </h2>
             <p className="mt-4 text-mocha">
-              Hover and scroll to move through {data.featured.length} recent reels, branded and
-              organic. Every card opens the real post on Instagram.
+              Use the arrows or swipe to move through {data.featured.length} recent reels, branded
+              and organic. Every card opens the real post on Instagram.
             </p>
           </motion.div>
 

@@ -12,6 +12,7 @@ import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import FloatingContact from "./components/FloatingContact";
 
 export default function App() {
   const [introDone, setIntroDone] = useState(false);
@@ -35,6 +36,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <FloatingContact />
     </>
   );
 }

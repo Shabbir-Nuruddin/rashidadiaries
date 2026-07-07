@@ -6,13 +6,15 @@ export default function Intro({ onDone }: { onDone: () => void }) {
   const reduce = useReducedMotion();
 
   useEffect(() => {
+    // Run once on mount so re-renders can't keep resetting the timer.
     document.body.style.overflow = "hidden";
     const t = setTimeout(onDone, reduce ? 400 : 2300);
     return () => {
       document.body.style.overflow = "";
       clearTimeout(t);
     };
-  }, [onDone, reduce]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const words = ["The", "Rashida", "Diaries"];
 
