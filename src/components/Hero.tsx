@@ -6,7 +6,7 @@ import { Arrow, Instagram } from "./icons";
 import type { Reel } from "../lib/data";
 
 const quick = [
-  { value: compact(data.stats.followers), label: "Followers" },
+  { value: compact(data.stats.followers) + "+", label: "Followers" },
   { value: compact(data.stats.totalViews) + "+", label: "Views" },
   { value: compact(data.stats.topViews), label: "Top reel" },
 ];

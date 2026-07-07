@@ -5,8 +5,9 @@ import { useCountUp } from "../hooks";
 type Stat = { target: number; fmt: (n: number) => string; label: string; sub: string };
 
 const stats: Stat[] = [
-  { target: data.stats.followers, fmt: (n) => compact(n), label: "Followers", sub: "engaged community" },
-  { target: data.stats.totalViews, fmt: (n) => compact(n) + "+", label: "Total views", sub: "across every reel" },
+  { target: data.stats.followers, fmt: (n) => compact(n) + "+", label: "Followers", sub: "and growing" },
+  { target: data.stats.posts, fmt: (n) => compact(n) + "+", label: "Posts", sub: "and counting" },
+  { target: data.stats.totalViews, fmt: (n) => compact(n) + "+", label: "Views", sub: "on recent reels alone" },
   { target: data.stats.topViews, fmt: (n) => compact(n), label: "Best reel", sub: "single-reel views" },
   { target: data.stats.totalLikes, fmt: (n) => compact(n) + "+", label: "Likes", sub: "hearts earned" },
   { target: data.stats.brandCount, fmt: (n) => Math.round(n) + "+", label: "Brands", sub: "already delivered for" },
@@ -30,9 +31,9 @@ export default function StatsBar() {
     <section className="bg-ink py-16 md:py-20">
       <div className="container-x">
         <p className="mb-10 text-center text-sm text-cream/60">
-          The numbers a brand actually cares about, pulled straight from the account.
+          The numbers a brand actually cares about, and these are just the recent reels.
         </p>
-        <div className="grid grid-cols-2 gap-y-10 gap-x-4 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="grid grid-cols-2 gap-y-10 gap-x-4 sm:grid-cols-3">
           {stats.map((s) => (
             <StatItem key={s.label} s={s} />
           ))}

@@ -17,7 +17,8 @@ const DATASET =
   "C:/Users/Shabbir/Downloads/dataset_instagram-reel-scraper_2026-07-06_14-16-03-775.json";
 
 const OWNER = "therashidadiaries";
-const FOLLOWERS = 80000; // not in scrape; provided by creator
+const FOLLOWERS = 80200; // profile-level, not in scrape; update from the IG profile
+const POSTS = 1045; // total posts on the profile (the scrape is only a recent sample)
 const FEATURED_COUNT = 50;
 
 // Curated map of commercial brand handles -> display info. Personal / family /
@@ -193,6 +194,7 @@ const out = {
   },
   stats: {
     followers: FOLLOWERS,
+    posts: POSTS,
     totalViews,
     topViews,
     totalLikes,

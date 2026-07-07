@@ -27,10 +27,10 @@ export default function SplitScroll() {
           className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center text-center"
         >
           <span className="font-serif text-[22vw] font-semibold leading-none text-clay md:text-[16vw]">
-            {compact(data.stats.totalViews)}
+            {compact(data.stats.totalViews)}+
           </span>
           <p className="mt-2 text-sm uppercase tracking-label text-mocha md:text-base">
-            views across {data.stats.reelCount} reels
+            views on recent reels alone
           </p>
           <p className="mt-4 max-w-xs px-6 text-mocha md:max-w-md">
             and the brands keep coming back for more.

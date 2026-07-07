@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { data } from "../lib/data";
 import { compact } from "../lib/format";
@@ -57,6 +57,23 @@ export default function FeaturedWork() {
   const nudge = (dir: number) =>
     rail.current?.scrollBy({ left: dir * 340, behavior: "smooth" });
 
+  // A horizontal scroll container can trap the vertical wheel in some browsers.
+  // Forward vertical-dominant wheel to the page so people can always scroll down
+  // while the cursor is over the reels (horizontal trackpad gestures still move
+  // the rail; the arrows navigate it too).
+  useEffect(() => {
+    const el = rail.current;
+    if (!el) return;
+    const onWheel = (e: WheelEvent) => {
+      if (Math.abs(e.deltaY) >= Math.abs(e.deltaX)) {
+        e.preventDefault();
+        window.scrollBy(0, e.deltaY);
+      }
+    };
+    el.addEventListener("wheel", onWheel, { passive: false });
+    return () => el.removeEventListener("wheel", onWheel);
+  }, []);
+
   return (
     <section id="work" className="overflow-hidden py-20 md:py-28">
       <div className="container-x">
@@ -70,7 +87,7 @@ export default function FeaturedWork() {
           >
             <p className="label mb-4">Featured work</p>
             <h2 className="font-serif text-4xl leading-[1.05] text-ink md:text-5xl">
-              {data.stats.reelCount} reels. {compact(data.stats.totalViews)} views. Two past a million.
+              {compact(data.stats.totalViews)}+ views on recent reels. Two past a million.
             </h2>
             <p className="mt-4 text-mocha">
               Use the arrows or swipe to move through {data.featured.length} recent reels, branded
