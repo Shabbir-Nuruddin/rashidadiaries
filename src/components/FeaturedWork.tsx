@@ -87,7 +87,7 @@ export default function FeaturedWork() {
           >
             <p className="label mb-4">Featured work</p>
             <h2 className="font-serif text-4xl leading-[1.05] text-ink md:text-5xl">
-              {compact(data.stats.totalViews)}+ views on recent reels. Two past a million.
+              The reels that landed. Two of them past a million views.
             </h2>
             <p className="mt-4 text-mocha">
               Use the arrows or swipe to move through {data.featured.length} recent reels, branded

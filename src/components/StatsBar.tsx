@@ -7,7 +7,7 @@ type Stat = { target: number; fmt: (n: number) => string; label: string; sub: st
 const stats: Stat[] = [
   { target: data.stats.followers, fmt: (n) => compact(n) + "+", label: "Followers", sub: "and growing" },
   { target: data.stats.posts, fmt: (n) => compact(n) + "+", label: "Posts", sub: "and counting" },
-  { target: data.stats.totalViews, fmt: (n) => compact(n) + "+", label: "Views", sub: "on recent reels alone" },
+  { target: data.stats.reach, fmt: (n) => compact(n) + "+", label: "Reach", sub: "accounts reached" },
   { target: data.stats.topViews, fmt: (n) => compact(n), label: "Best reel", sub: "single-reel views" },
   { target: data.stats.totalLikes, fmt: (n) => compact(n) + "+", label: "Likes", sub: "hearts earned" },
   { target: data.stats.brandCount, fmt: (n) => Math.round(n) + "+", label: "Brands", sub: "already delivered for" },

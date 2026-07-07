@@ -32,6 +32,7 @@ export type SiteData = {
   stats: {
     followers: number;
     posts: number;
+    reach: number;
     totalViews: number;
     topViews: number;
     totalLikes: number;

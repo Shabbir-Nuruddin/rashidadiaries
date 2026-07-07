@@ -19,6 +19,7 @@ const DATASET =
 const OWNER = "therashidadiaries";
 const FOLLOWERS = 80200; // profile-level, not in scrape; update from the IG profile
 const POSTS = 1045; // total posts on the profile (the scrape is only a recent sample)
+const REACH = 2000000; // accounts reached, from the creator's Instagram insights
 const FEATURED_COUNT = 50;
 
 // Curated map of commercial brand handles -> display info. Personal / family /
@@ -195,6 +196,7 @@ const out = {
   stats: {
     followers: FOLLOWERS,
     posts: POSTS,
+    reach: REACH,
     totalViews,
     topViews,
     totalLikes,
