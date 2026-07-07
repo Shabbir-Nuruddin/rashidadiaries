@@ -44,9 +44,9 @@ export default function Audience() {
             Hi, I'm {site.creator}
           </h2>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-mocha">
-            For years I've been sharing real family life in {site.location.split(",")[0]}, the
-            warmth, the humour, the everyday moments that people see themselves in. That trust is
-            exactly what turns a brand mention into something my community remembers and buys.
+            For years, with a small team across the UAE and India, we've been sharing real family
+            life, the warmth, the humour, the everyday moments that people see themselves in. That
+            trust is exactly what turns a brand mention into something my community remembers and buys.
           </p>
 
           <div className="mt-8">
@@ -67,8 +67,8 @@ export default function Audience() {
 
           <dl className="mt-10 grid max-w-md grid-cols-2 gap-6">
             <div>
-              <dt className="text-xs uppercase tracking-label text-mocha">Based in</dt>
-              <dd className="mt-1 font-serif text-xl text-ink">{site.location.split(",")[0]}, UAE</dd>
+              <dt className="text-xs uppercase tracking-label text-mocha">Working across</dt>
+              <dd className="mt-1 font-serif text-xl text-ink">UAE &amp; India</dd>
             </div>
             <div>
               <dt className="text-xs uppercase tracking-label text-mocha">Focus</dt>

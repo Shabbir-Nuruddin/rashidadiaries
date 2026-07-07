@@ -26,8 +26,8 @@ export default function Contact() {
             Put your brand in front of an audience that acts.
           </h2>
           <p className="mt-5 max-w-md text-cream/70">
-            Tell me what you're launching and I'll come back with ideas, formats and a quote.
-            Prefer to chat first? Reach me directly:
+            Now partnering with brands across the UAE and India. Tell me what you're launching and
+            I'll come back with ideas, formats and a quote. Prefer to chat first? Reach me directly:
           </p>
 
           <div className="mt-8 space-y-3">

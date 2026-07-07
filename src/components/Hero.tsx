@@ -98,9 +98,9 @@ export default function Hero() {
               Diaries
             </h1>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-mocha">
-              I'm <span className="font-semibold text-ink">{site.creator}</span>. I turn everyday
-              family and lifestyle moments into content that {site.location.split(",")[0]} audiences
-              watch, trust and act on. Here's the reach behind the reels.
+              I'm <span className="font-semibold text-ink">{site.creator}</span>. With a small team
+              across the UAE and India, we turn everyday family and lifestyle moments into content
+              that audiences watch, trust and act on. Here's the reach behind the reels.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">

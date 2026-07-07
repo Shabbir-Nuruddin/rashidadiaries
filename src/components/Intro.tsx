@@ -32,7 +32,7 @@ export default function Intro({ onDone }: { onDone: () => void }) {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.6 }}
       >
-        Dubai · Family &amp; Lifestyle
+        UAE &amp; India · Family &amp; Lifestyle
       </motion.p>
 
       <div className="flex flex-col items-center gap-1 [transform-style:preserve-3d]">

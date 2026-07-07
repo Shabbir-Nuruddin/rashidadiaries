@@ -6,8 +6,8 @@
 export const site = {
   brand: "The Rashida Diaries",
   creator: "Farida Nuruddin",
-  tagline: "Dubai family & lifestyle creator",
-  location: "Dubai, United Arab Emirates",
+  tagline: "Family & lifestyle creators · UAE & India",
+  location: "UAE & India",
   instagramHandle: "therashidadiaries",
   instagramUrl: "https://instagram.com/therashidadiaries",
 
@@ -32,7 +32,7 @@ export const site = {
     },
     {
       title: "Venue & Event Coverage",
-      desc: "Restaurants, staycations and experiences captured beautifully, on location across the UAE.",
+      desc: "Restaurants, staycations and experiences captured beautifully, on location across the UAE and India.",
     },
     {
       title: "UGC & Ad Creative",
@@ -43,7 +43,7 @@ export const site = {
   // ── CONTENT PILLARS (shown in the "About" section) ────────────────────
   pillars: [
     "Motherhood & family",
-    "Weddings & celebrations",
+    "Activities & adventures",
     "Relatable comedy & POVs",
     "Food & dining",
     "Travel & staycations",
