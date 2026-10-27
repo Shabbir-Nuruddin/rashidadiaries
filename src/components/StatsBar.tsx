@@ -5,7 +5,7 @@ import { useCountUp } from "../hooks";
 type Stat = { target: number; fmt: (n: number) => string; label: string; sub: string };
 
 const stats: Stat[] = [
-  { target: data.stats.followers, fmt: (n) => compact(n) + "+", label: "Followers", sub: "and growing" },
+  { target: data.stats.followers, fmt: (n) => (n / 1000).toFixed(1) + "K", label: "Followers", sub: "and growing" },
   { target: data.stats.posts, fmt: (n) => compact(n) + "+", label: "Posts", sub: "and counting" },
   { target: data.stats.reach, fmt: (n) => compact(n) + "+", label: "Reach", sub: "accounts reached" },
   { target: data.stats.topViews, fmt: (n) => compact(n), label: "Best reel", sub: "single-reel views" },
