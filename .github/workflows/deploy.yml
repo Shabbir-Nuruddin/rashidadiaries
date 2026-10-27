@@ -26,6 +26,10 @@ jobs:
       # .nojekyll tells Pages to serve the built files as-is (no Jekyll),
       # so nothing rewrites our index.html or hides the assets folder.
       - run: touch dist/.nojekyll
+      # This branch contains built assets only; Vercel must deploy the source branch.
+      - name: Disable Vercel deployments of the generated Pages branch
+        run: |
+          node -e 'require("fs").writeFileSync("dist/vercel.json", JSON.stringify({git:{deploymentEnabled:false}}, null, 2))'
       - name: Publish to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
